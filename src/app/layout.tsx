@@ -5,7 +5,7 @@ import './globals.css';
 import '@/styles/global.css.ts';
 
 const pretendard = localFont({
-  src: './fonts/PretendardVariable.woff2',
+  src: '../public/fonts/PretendardVariable.woff2',
   variable: '--font-pretendard',
   weight: '400 700',
   display: 'swap',

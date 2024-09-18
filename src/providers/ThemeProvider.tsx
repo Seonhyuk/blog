@@ -1,7 +1,7 @@
 'use client';
 
 import type { HTMLAttributes } from 'react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { darkTheme, lightTheme } from '@/styles';
 
@@ -10,11 +10,18 @@ type ThemeProviderProps = HTMLAttributes<HTMLDivElement>;
 const ThemeProvider = ({ children }: ThemeProviderProps) => {
   const [theme, setTheme] = useState<string | null>('light');
 
-  const isDark = useMemo(() => theme === 'dark', [theme]);
-
   useEffect(() => {
-    setTheme(localStorage.getItem('theme'));
-  }, [isDark]);
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setTheme(mediaQuery.matches ? 'dark' : 'light');
+
+    const handleChange = (e: MediaQueryListEvent) => {
+      setTheme(e.matches ? 'dark' : 'light');
+    };
+
+    mediaQuery.addEventListener('change', handleChange);
+
+    return () => mediaQuery.removeEventListener('change', handleChange);
+  }, []);
 
   return <div className={`${theme === 'dark' ? darkTheme : lightTheme}`}>{children}</div>;
 };

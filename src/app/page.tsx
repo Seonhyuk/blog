@@ -3,7 +3,7 @@ import { theme } from '@/styles';
 
 import * as S from './page.css';
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={S.container}>
       <Typography variant="display1">안녕하세요</Typography>
@@ -62,4 +62,6 @@ export default function Home() {
       <Typography color={theme.colors.grey[900]}>안녕하세요</Typography>
     </div>
   );
-}
+};
+
+export default Home;

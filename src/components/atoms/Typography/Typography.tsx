@@ -2,7 +2,7 @@ import type { CSSProperties, ElementType } from 'react';
 import { useMemo } from 'react';
 import { forwardRef } from 'react';
 
-import { vars } from '@/styles';
+import { theme } from '@/styles';
 
 import { typographyVariant, fontWeights, textAlignments, verticalAlignments, inlineElement } from './Typography.css';
 import type { PolymorphicRef, TypographyTypes } from './Typography.types';
@@ -42,7 +42,7 @@ const Typography = forwardRef(
   <T extends ElementType = 'span'>(
     {
       as,
-      color = vars.theme.colors.text['100'],
+      color = theme.colors.text['100'],
       textAlign = 'left',
       verticalAlign = 'middle',
       variant = 'body1',

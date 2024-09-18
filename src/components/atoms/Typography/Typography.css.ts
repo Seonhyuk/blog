@@ -1,17 +1,17 @@
 import { style, styleVariants } from '@vanilla-extract/css';
 
-import { vars } from '@/styles';
+import { theme } from '@/styles';
 
 export const typographyVariant = styleVariants({
-  display1: { fontSize: vars.theme.font['900'] },
-  display2: { fontSize: vars.theme.font['800'] },
-  heading1: { fontSize: vars.theme.font['700'] },
-  heading2: { fontSize: vars.theme.font['600'] },
-  heading3: { fontSize: vars.theme.font['500'] },
-  body1: { fontSize: vars.theme.font['400'] },
-  body2: { fontSize: vars.theme.font['300'] },
-  caption: { fontSize: vars.theme.font['200'] },
-  overline: { fontSize: vars.theme.font['100'] },
+  display1: { fontSize: theme.font['900'] },
+  display2: { fontSize: theme.font['800'] },
+  heading1: { fontSize: theme.font['700'] },
+  heading2: { fontSize: theme.font['600'] },
+  heading3: { fontSize: theme.font['500'] },
+  body1: { fontSize: theme.font['400'] },
+  body2: { fontSize: theme.font['300'] },
+  caption: { fontSize: theme.font['200'] },
+  overline: { fontSize: theme.font['100'] },
 });
 
 export const textAlignments = styleVariants({
@@ -31,6 +31,6 @@ export const inlineElement = style({
 });
 
 export const fontWeights = styleVariants({
-  normal: { fontWeight: vars.theme.weight['normal'] },
-  bold: { fontWeight: vars.theme.weight['bold'] },
+  normal: { fontWeight: theme.weight['normal'] },
+  bold: { fontWeight: theme.weight['bold'] },
 });

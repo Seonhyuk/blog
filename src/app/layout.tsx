@@ -5,7 +5,6 @@ import type { ReactNode } from 'react';
 import { ThemeProvider } from '@/providers';
 
 import './globals.css';
-import '@/styles/global.css.ts';
 
 const pretendard = localFont({
   src: '../public/fonts/PretendardVariable.woff2',

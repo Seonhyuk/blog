@@ -1,5 +1,5 @@
 import { Typography } from '@/components';
-import { vars } from '@/styles';
+import { theme } from '@/styles';
 
 import * as S from './page.css';
 
@@ -42,24 +42,24 @@ export default function Home() {
       <Typography variant="overline" weight="bold">
         안녕하세요
       </Typography>
-      <Typography color={vars.theme.colors.primary[100]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[200]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[300]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[400]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[500]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[600]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[700]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[800]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.primary[900]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[100]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[200]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[300]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[400]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[500]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[600]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[700]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[800]}>안녕하세요</Typography>
-      <Typography color={vars.theme.colors.grey[900]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[100]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[200]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[300]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[400]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[500]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[600]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[700]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[800]}>안녕하세요</Typography>
+      <Typography color={theme.colors.primary[900]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[100]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[200]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[300]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[400]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[500]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[600]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[700]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[800]}>안녕하세요</Typography>
+      <Typography color={theme.colors.grey[900]}>안녕하세요</Typography>
     </div>
   );
 }

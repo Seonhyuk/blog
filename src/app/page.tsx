@@ -1,65 +1,65 @@
-import Image from 'next/image';
+import { Typography } from '@/components';
+import { vars } from '@/styles';
 
-import styles from './page.module.css';
+import * as S from './page.css';
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image className={styles.logo} src="https://nextjs.org/icons/next.svg" alt="Next.js logo" width={180} height={38} priority />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image className={styles.logo} src="https://nextjs.org/icons/vercel.svg" alt="Vercel logomark" width={20} height={20} />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="https://nextjs.org/icons/file.svg" alt="File icon" width={16} height={16} />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="https://nextjs.org/icons/window.svg" alt="Window icon" width={16} height={16} />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image aria-hidden src="https://nextjs.org/icons/globe.svg" alt="Globe icon" width={16} height={16} />
-          Go to nextjs.org →
-        </a>
-      </footer>
+    <div className={S.container}>
+      <Typography variant="display1">안녕하세요</Typography>
+      <Typography variant="display2">안녕하세요</Typography>
+      <Typography variant="heading1">안녕하세요</Typography>
+      <Typography variant="heading2">안녕하세요</Typography>
+      <Typography variant="heading3">안녕하세요</Typography>
+      <Typography variant="body1">안녕하세요</Typography>
+      <Typography variant="body2">안녕하세요</Typography>
+      <Typography variant="caption">안녕하세요</Typography>
+      <Typography variant="overline">안녕하세요</Typography>
+      <Typography variant="display1" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="display2" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="heading1" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="heading2" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="heading3" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="body1" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="body2" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="caption" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography variant="overline" weight="bold">
+        안녕하세요
+      </Typography>
+      <Typography color={vars.theme.colors.primary[100]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[200]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[300]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[400]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[500]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[600]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[700]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[800]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.primary[900]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[100]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[200]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[300]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[400]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[500]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[600]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[700]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[800]}>안녕하세요</Typography>
+      <Typography color={vars.theme.colors.grey[900]}>안녕하세요</Typography>
     </div>
   );
 }

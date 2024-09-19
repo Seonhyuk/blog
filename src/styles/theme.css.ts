@@ -1,4 +1,10 @@
-import { createThemeContract, createTheme } from '@vanilla-extract/css';
+import { createThemeContract, createTheme, style } from '@vanilla-extract/css';
+
+export const themeProviderStyle = style({
+  display: 'flex',
+  flexDirection: 'column',
+  width: '100%',
+});
 
 export const theme = createThemeContract({
   colors: {

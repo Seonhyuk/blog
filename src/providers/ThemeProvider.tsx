@@ -3,7 +3,7 @@
 import type { HTMLAttributes } from 'react';
 import { useEffect, useState } from 'react';
 
-import { darkTheme, lightTheme } from '@/styles';
+import { darkTheme, lightTheme, themeProviderStyle } from '@/styles';
 
 type ThemeProviderProps = HTMLAttributes<HTMLDivElement>;
 
@@ -23,7 +23,7 @@ const ThemeProvider = ({ children }: ThemeProviderProps) => {
     return () => mediaQuery.removeEventListener('change', handleChange);
   }, []);
 
-  return <div className={`${theme === 'dark' ? darkTheme : lightTheme}`}>{children}</div>;
+  return <div className={`${themeProviderStyle} ${theme === 'dark' ? darkTheme : lightTheme}`}>{children}</div>;
 };
 
 export default ThemeProvider;

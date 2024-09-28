@@ -9,10 +9,17 @@ import { ReactQueryProvider, ThemeProvider } from '@/providers';
 import './globals.css';
 import './page.css';
 
-const pretendard = localFont({
-  src: '../public/fonts/PretendardVariable.woff2',
-  variable: '--font-pretendard',
-  weight: '400 700',
+const pretendardMedium = localFont({
+  src: '../public/fonts/Pretendard-Medium.subset.woff',
+  variable: '--font-pretendard-medium',
+  weight: '400',
+  display: 'swap',
+});
+
+const pretendardBold = localFont({
+  src: '../public/fonts/Pretendard-ExtraBold.subset.woff',
+  variable: '--font-pretendard-bold',
+  weight: '700',
   display: 'swap',
 });
 
@@ -24,7 +31,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en">
-      <body className={`${pretendard.variable}`}>
+      <body className={`${pretendardMedium.variable} ${pretendardBold.variable}`}>
         <ReactQueryProvider>
           <ThemeProvider>
             <Header menuList={MENU_LIST} />

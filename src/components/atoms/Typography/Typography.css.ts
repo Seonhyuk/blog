@@ -31,6 +31,6 @@ export const inlineElement = style({
 });
 
 export const fontWeights = styleVariants({
-  normal: { fontWeight: theme.weight['normal'] },
-  bold: { fontWeight: theme.weight['bold'] },
+  normal: { fontFamily: 'var(--font-pretendard-medium)' },
+  bold: { fontFamily: 'var(--font-pretendard-bold)' },
 });

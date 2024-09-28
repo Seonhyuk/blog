@@ -1,4 +1,4 @@
-import { Tag, Typography } from '@/components';
+import { Icon, Tag, Typography } from '@/components';
 
 import * as S from './page.css';
 
@@ -8,6 +8,8 @@ const Home = () => {
       <Tag>
         <Typography>안녕</Typography>
       </Tag>
+
+      <Icon icon="Menu" />
     </div>
   );
 };

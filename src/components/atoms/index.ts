@@ -1,3 +1,6 @@
+export * from './Icon';
+export { default as Icon } from './Icon';
+
 export * from './Skeleton';
 export { default as Skeleton } from './Skeleton';
 
